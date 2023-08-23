@@ -60,8 +60,7 @@ h1 {
   transition: 0.3s background-color; }
 
 .header.scrolled {
-  background-color: #273242;
-  transition: 0.3s background-color; }
+  background-color: #273242; }
 
 .logo-and-links {
   display: flex;
