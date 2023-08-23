@@ -74,6 +74,10 @@ h1 {
     z-index: 1;
     width: 100%;
 }
+.header.scrolled{
+    background-color: #273242;
+    transition: 0.3s;
+}
 
 .logo-and-links {
     display: flex;
@@ -100,6 +104,7 @@ h1 {
     border: none;
     cursor: pointer;
     letter-spacing: 0.07088rem;
+    z-index: 1;
 }
 
 .nav-head {
@@ -107,9 +112,9 @@ h1 {
 
     @media (min-width: 75rem) {
         display: flex;
+
     }
 }
-
 
 .nav-head a {
     font-size: 1.125rem;
@@ -120,8 +125,13 @@ h1 {
 
 .nav-head ul {
     list-style: none;
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
+
+    @media (min-width:75rem) {
+        flex-direction: row;
+    }
 }
 
 .nav-head li.active a {
