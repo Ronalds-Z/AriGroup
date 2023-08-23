@@ -1,7 +1,13 @@
-const burgeritem = document.querySelector(".burger-menu");
+const headerElement = document.querySelector(".header");
+if (headerElement) {
+    window.addEventListener("scroll", () => {
+        const pagescroll = window.scrollY;
 
-if (burgeritem) {
-    burgeritem.addEventListener("click", () => {
-        alert("burger clicked")
+        if (pagescroll > 1) {
+            headerElement.classList.add("scrolled");
+        }
+        else {
+            headerElement.classList.remove("scrolled");
+        }
     })
 }

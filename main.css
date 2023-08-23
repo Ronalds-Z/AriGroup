@@ -56,7 +56,11 @@ h1 {
   background-color: #27324240;
   position: fixed;
   z-index: 1;
-  width: 100%; }
+  width: 100%;
+  transition: 0.3s background-color; }
+
+.header.scrolled {
+  background-color: #273242; }
 
 .logo-and-links {
   display: flex;
@@ -78,7 +82,8 @@ h1 {
   background: none;
   border: none;
   cursor: pointer;
-  letter-spacing: 0.07088rem; }
+  letter-spacing: 0.07088rem;
+  z-index: 1; }
 
 .nav-head {
   display: none; }
@@ -94,8 +99,12 @@ h1 {
 
 .nav-head ul {
   list-style: none;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   gap: 3rem; }
+  @media (min-width: 75rem) {
+    .nav-head ul {
+      flex-direction: row; } }
 
 .nav-head li.active a {
   border-bottom: 0.063rem solid; }
