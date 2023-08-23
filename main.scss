@@ -73,10 +73,12 @@ h1 {
     position: fixed;
     z-index: 1;
     width: 100%;
+    transition: 0.3s background-color;
 }
-.header.scrolled{
+
+.header.scrolled {
     background-color: #273242;
-    transition: 0.3s;
+    transition: 0.3s background-color;
 }
 
 .logo-and-links {
