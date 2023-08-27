@@ -13,8 +13,8 @@ if (headerElement) {
 }
 const burgerItem = document.querySelector(".burger-menu");
 if (burgerItem) {
-    const burgerElement = document.querySelector(".nav-head");
+    const navElement = document.querySelector(".nav-head");
     burgerItem.addEventListener("click", () => {
-        burgerElement.classList.toggle("show");
+        navElement.classList.toggle("show");
     });
 }

@@ -92,20 +92,17 @@ h1 {
   align-items: center;
   background-color: #273242;
   width: 100%;
-  min-height: 100%;
-  top: 0;
-  left: 100%;
-  transition: 0.5s left; }
+  inset: 0 100%;
+  transition: 0.5s inset; }
   @media (min-width: 75rem) {
     .nav-head {
       position: relative;
       background: none;
-      left: 0;
-      justify-content: flex-end;
-      transition: none; } }
+      inset: 0;
+      justify-content: flex-end; } }
 
 .nav-head.show {
-  left: 0; }
+  inset: 0; }
 
 .nav-head a {
   font-size: 1.125rem;
