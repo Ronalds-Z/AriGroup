@@ -11,3 +11,10 @@ if (headerElement) {
         }
     })
 }
+const burgerItem = document.querySelector(".burger-menu");
+if (burgerItem) {
+    const navElement = document.querySelector(".nav-head");
+    burgerItem.addEventListener("click", () => {
+        navElement.classList.toggle("show");
+    });
+}

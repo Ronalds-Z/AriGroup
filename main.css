@@ -86,10 +86,23 @@ h1 {
   z-index: 1; }
 
 .nav-head {
-  display: none; }
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #273242;
+  width: 100%;
+  inset: 0 0 0 100%;
+  transition: 0.5s inset; }
   @media (min-width: 75rem) {
     .nav-head {
-      display: flex; } }
+      position: relative;
+      background: none;
+      inset: 0;
+      justify-content: flex-end; } }
+
+.nav-head.show {
+  inset: 0; }
 
 .nav-head a {
   font-size: 1.125rem;
